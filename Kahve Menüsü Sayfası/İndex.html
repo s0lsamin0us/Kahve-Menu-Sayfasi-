@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Deniz | Kahve Menü Sayfası</title>
+    <!-- Boostrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- İcon -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar" id="home">
+        <div class="container">
+            <a class="navbar-brand fw-bold ">Cafe Aroma</a>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto flex-row mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item"><a href="#home" class="nav-link">Anasayfa</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menü</a></li>
+                    <li class="nav-item"><a href="#form" class="nav-link">Birlikte Çalışalım</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                    <!-- Dark-Light Mode -->
+                     <div class="nav-item ms-3">
+                        <button id="theme-toggle" class="btn btn-outline-light btn-sm">
+                                <span id="theme-icon">🌙</span> Dark Mode
+                        </button>
+                     </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+<section class="hero">
+    <span>
+    <h1>Günün Enerjisini Bizimle Yakalayın!</h1>
+    <p>Sıcak, taze ve özenle hazırlanmış kahvelerle tanışın.</p>
+    </span>
+  </section>
+<!-- Hakkımızda -->
+<section class="container my-5">
+    <h2 class="text-center fw-bold fs- mb-4">Hakkımızda</h2>
+    <p class="text-center fs-6">Kahveyi sadece bir içecek değil, bir deneyim olarak görüyoruz. Her fincanın arkasında özenle seçilmiş çekirdekler, sevgiyle hazırlanmış tarifler ve paylaşmaya değer bir hikâye var. Sıcacık sohbetlerin, keyifli anların eşlikçisi olmak için buradayız. Kahveye gönül veren herkese kapımız açık. Hoş geldiniz!</p>
+</section>
+<!-- Menü -->
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">Kahvelerimiz</h2>
+    <div class="row g-4" id="menu">
+        <!-- Espresso -->
+        <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_45_01.png" alt="Espresso" class="img-fluid mb-3">
+                <h5 class="fw-bold">Espresso</h5>
+                <p class="text-muted">Yoğun armomalı kısa kahve shot</p>
+                <p class="fw-bold">₺45</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_37_36.png" alt="Cappucino" class="img-fluid mb-3">
+                <h5 class="fw-bold">Cappucino</h5>
+                <p class="text-muted">Süt köpüğüyle klasik italyan lezzeti.</p>
+                <p class="fw-bold">₺50</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_42_08.png" alt="Latte" class="img-fluid mb-3">
+                <h5 class="fw-bold">Latte</h5>
+                <p class="text-muted">Yumuşak içim, kahve ve sütün mükemmel uyumu </p>
+                <p class="fw-bold">₺55</p>
+            </div>
+        </div>
+          <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_38_45.png" alt="Mocha" class="img-fluid mb-3">
+                <h5 class="fw-bold">Mocha</h5>
+                <p class="text-muted">Çikolata ile kahvenin mükemmel uyumu</p>
+                <p class="fw-bold">₺80</p>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 12 Kas 2025 20_27_11.png" alt="Mocha" class="img-fluid mb-3">
+                <h5 class="fw-bold">Americano</h5>
+                <p class="text-muted">İlk yudumda kahvenin kreması ve kokusu ile mükkemel bir tat uyumu.</p>
+                <p class="fw-bold">₺65</p>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_38_45.png" alt="Mocha" class="img-fluid mb-3">
+                <h5 class="fw-bold">White Mocha</h5>
+                <p class="text-muted">Beyaz Çikolata ile kahvenin mükemmel uyumu</p>
+                <p class="fw-bold">₺80</p>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_38_45.png" alt="Mocha" class="img-fluid mb-3">
+                <h5 class="fw-bold">Caramel Macihato</h5>
+                <p class="text-muted">Karamel ve Vanilya ile kahvenin mükemmel uyumu</p>
+                <p class="fw-bold">₺80</p>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="menu-card p-3 text-center">
+                <img src="/images/ChatGPT Image 10 Kas 2025 22_38_45.png" alt="Mocha" class="img-fluid mb-3">
+                <h5 class="fw-bold">Caramel Latte</h5>
+                <p class="text-muted">Karamel ve sunumun kahve ile uyumlu mükemmel uyumu </p>
+                <p class="fw-bold">₺80</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- İş Başvuru kısmı -->
+<section class="container my-5">
+    <h4 class="text-center mb-4 fw-bold">Bizimle çalışmak ister misiniz ?</h4>
+    <!-- İletişim Alanı  -->
+    <div class="container" id="form">
+        <div class="contact-card">
+            <h2 class="text-center mb-4">Bizimle İletişime Geç</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ad Soyad</label>
+                    <input type="text" class="form-control" id="name" placeholder="Adınızı giriniz." required>
+                </div>
+                <div class="mb-3">
+                    <label for="number" class="form-label">Tel no</label>
+                    <input type="text" class="form-control" placeholder="Telefon Numarası giriniz." required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-posta</label>
+                    <input type="email" class="form-control" id="email" placeholder="ornek@mail.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Kaç yıldır baristasın ?</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Örnek: 0-2 yıl" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mesaj</label>
+                    <input type="message" class="form-control" id="message" placeholder="İş deneyimlerinizi yazınız." required>
+                </div>
+                <div class="mb-3">
+                    <label for="cinsiyet" class="form-label">Cinsiyetiniz</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="women" class="form-check-input" required>
+                            <label class="form-check-label" for="women">Kadın</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="men" class="form-check-input" required>
+                            <label class="form-check-label" for="men">Erkek</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-send btn-outline-dark w-100 mt-2 input-group">Gönder</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="text-white text-center py-4">
+  <p class="mb-1">© 2025 Solsaminous</p>
+  <p class="small mb-2">📍 Ayvacık, Türkiye | ☎️ 0111 111 11 11</p>
+    <div class="map-responsive mx-auto" aria-hidden="false">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9775.86325381938!2d26.31503197719273!3d39.487306638198675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0790049d649b3%3A0x1f2aa3d8fed2737a!2sBiberderesi!5e0!3m2!1sen!2str!4v1762805190573!5m2!1sen!2str" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kahve Dükkanı konumu"></iframe>
+    </div>
+  <p class="fs-6 mb-1">🕙️ Açılış Kapanış Saatlerimiz</p>
+  <pre class="small m-1">Hafta içi: 08:00-00.00 
+Hafta sonu: 09:00-01:00
+  </pre>
+    <h5 class="fs-6">🌐 Sosyal Medyalarımız</h5>
+    <a href="#"><i class="bx bxl-instagram fs-5 text-white" id="ig"target="_blank"></i></a>
+</footer>
+<!-- Boostrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Javascript -->
+ <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #fffaf5;
+  --text-color: #3e2f2f;
+  --nav-bg: #5c4033;
+  --card-bg: #ffffff;
+  --btn-border: #fff;
+  --transition-speed: 0.4s;
+}
+
+body.dark-mode {
+  --bg-color: #3b2b22;
+  --text-color: #d4d0cdee;
+  --nav-bg: #3b2b22;
+  --card-bg: #a55a3485;
+  --btn-border: #f1e6d0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.navbar {
+  background-color: var(--nav-bg) !important;
+  transition: background-color var(--transition-speed);
+}
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 14.12%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 560px; 
+  margin: 1.25rem auto; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-radius: 10px;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+}
+
+.navbar-brand, .nav-link {
+  color: #eeecec !important;
+}
+
+.hero {
+  background: url('/images/pexels-rachel-claire-5865773.jpg') center/cover no-repeat;
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  transition: filter var(--transition-speed), background var(--transition-speed);
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.menu-card img {
+  border-radius: 10px;
+}
+.menu-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.menu-card:hover { transform: scale(1.03); }
+
+footer {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.navbar-nav.flex-row { display: flex; gap: 1rem; align-items: center; }
+.navbar-nav .nav-item { list-style-type: none; }
+
+#form {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 12px rgb(0,0,0,0.1);
+  transition: background-color var(--transition-speed);
+}
+
+#theme-toggle {
+  border-color: var(--btn-border);
+  color: var(--btn-border);
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#theme-toggle:hover {
+  background-color: var(--btn-border);
+  color: var(--nav-bg);
+  transform: scale(1.05);
+}
+
+#theme-icon {
+  display: inline-block;
+  transition: transform 0.6s ease;
+}
+.rotate {
+  transform: rotate(360deg);
+}
